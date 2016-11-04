@@ -268,10 +268,24 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0xf700-0x2c0000</key>
+		<dict>
+			<key>Action</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
 			<key>Action</key>
 			<integer>7</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf701-0x2c0000</key>
+		<dict>
+			<key>Action</key>
+			<integer>21</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -282,10 +296,24 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0xf702-0x2c0000</key>
+		<dict>
+			<key>Action</key>
+			<integer>18</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0xf702-0x320000</key>
 		<dict>
 			<key>Action</key>
 			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x2c0000</key>
+		<dict>
+			<key>Action</key>
+			<integer>19</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -378,7 +406,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dev-stuff/.iterm2</string>
+	<string>/Applications</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -416,11 +444,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>167 348 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>972 950 616 174 0 0 2560 1440 </string>
+	<string>652 680 616 174 0 0 1920 1080 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>2082 174 796 473 1920 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 10 2544 1430 0 0 2560 1440 </string>
+	<string>1640 2 1914 896 0 0 1680 1050 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1968,7 +1998,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-28T14:33:45Z</date>
+	<date>2016-10-30T21:31:13Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.0</string>
 	<key>SavePasteHistory</key>
@@ -2016,6 +2046,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.4</string>
+	<string>3.0.9</string>
 </dict>
 </plist>

@@ -1,0 +1,7 @@
+[user]
+	name = Wojciech Piatkowski
+	email = wpiat@softserveinc.com
+[core]
+	autocrlf = input
+[push]
+	default = current
