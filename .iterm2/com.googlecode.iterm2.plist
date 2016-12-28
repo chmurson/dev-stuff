@@ -246,7 +246,7 @@
 	<key>Default Bookmark Guid</key>
 	<string>553084C8-6BEF-4E21-A667-50C2597E63A1</string>
 	<key>DimBackgroundWindows</key>
-	<false/>
+	<true/>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
@@ -372,7 +372,7 @@
 	<key>HiddenAdvancedFontRendering</key>
 	<false/>
 	<key>HideActivityIndicator</key>
-	<true/>
+	<false/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -446,7 +446,7 @@
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>652 680 616 174 0 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2080 275 796 473 1920 0 1440 900 </string>
+	<string>2417 269 796 473 1920 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
