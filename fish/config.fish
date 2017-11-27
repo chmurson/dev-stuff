@@ -8,6 +8,9 @@ set -g -x PATH /usr/local/bin $PATH
 
 export HOMEBREW_GITHUB_API_TOKEN=f81ffe9a125ac9573ef2fada661efb138d9a7187
 
+set -gx NVM_DIR /usr/local/opt/nvm
+set -gx nvm_prefix /usr/local/opt/nvm
+
 bass source /usr/local/opt/nvm/nvm.sh
 
 source (rbenv init - | psub)
