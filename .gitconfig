@@ -5,3 +5,27 @@
 	autocrlf = input
 [push]
 	default = current
+[alias]
+	c = checkout
+	b = branch
+	ct = commit
+	s = status
+	m = merge
+        pl = pull
+	ph = push
+	phf = push --force
+	fe = fetch
+	adog = log --all --decorate --oneline --graph
+	# Delete all local branches but master and the current one, only if they are fully merged with master.
+    	br-delete-useless = "!f(){\
+        	git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
+    	}; f"
+    	# Delete all local branches but master and the current one.
+    	br-delete-useless-force = "!f(){\
+        	git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
+    	}; f"
+	[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
