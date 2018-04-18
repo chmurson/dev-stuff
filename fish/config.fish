@@ -2,6 +2,7 @@ alias git-sync-with-develop "git checkout develop ;and git pull ;and git checkou
 
 alias use-work "rm -rf ~/Library/Safari and;  ln -s ~/.profileData/work/Safari/ ~/Library/Safari"
 alias use-home "rm -rf ~/Library/Safari and;  ln -s ~/.profileData/home/Safari/ ~/Library/Safari"
+alias j "joplin"
 
 
 set -g -x PATH /usr/local/bin $PATH
@@ -24,3 +25,6 @@ function speed-up
   sudo killall parentalcontrolsd
   sudo killall softwareupdated
 end
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+

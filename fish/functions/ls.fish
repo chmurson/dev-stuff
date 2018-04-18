@@ -1,3 +1,3 @@
 function ls
-  /bin/ls -lah
+  /bin/ls -lahG
 end
