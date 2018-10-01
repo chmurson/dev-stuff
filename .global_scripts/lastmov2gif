@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+LAST_MOV_FILE=$(ls -t | grep '.*\.mov$' | head -1)
+LAST_GIF_FILE="${LAST_MOV_FILE/\.mov/.gif}"
+
+if [ -f "${LAST_MOV_FILE}" ]; then
+   video2gif "${LAST_MOV_FILE}" "${LAST_GIF_FILE}"
+   echo "Generated file: $LAST_GIF_FILE"
+else
+   echo "File '$FILE' does not exist."
+fi
+
+
