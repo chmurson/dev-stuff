@@ -1,31 +1,20 @@
-[user]
-	name = Wojciech Piatkowski
-	email = wpiat@softserveinc.com
-[core]
-	autocrlf = input
-[push]
-	default = current
 [alias]
+	st = status
 	c = checkout
-	b = branch
-	ct = commit
-	s = status
-	m = merge
-        pl = pull
 	ph = push
+	pl = pull
 	phf = push --force
-	fe = fetch
-	adog = log --all --decorate --oneline --graph
-	# Delete all local branches but master and the current one, only if they are fully merged with master.
-    	br-delete-useless = "!f(){\
-        	git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
-    	}; f"
-    	# Delete all local branches but master and the current one.
-    	br-delete-useless-force = "!f(){\
-        	git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
-    	}; f"
-	[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
+	s = status -s
+        cm = commit -m
+        logg = log --graph --decorate --oneline 
+        loggpr = log --graph --decorate --oneline --grep="Merge pull request"
+        o = open
+        r = recent 
+[user]
+	name = Wojciech Piątkowski
+	email = chmurson@gmail.com
+[filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
