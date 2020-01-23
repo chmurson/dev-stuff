@@ -1,20 +1,24 @@
 [alias]
-	st = status
-	c = checkout
-	ph = push
-	pl = pull
-	phf = push --force
-	s = status -s
+        st = status
+        c = checkout
+        ph = push
+        pl = pull
+        phf = push --force-with-lease
+        s = status -s
         cm = commit -m
-        logg = log --graph --decorate --oneline 
+        logg = log --graph --decorate --oneline
         loggpr = log --graph --decorate --oneline --grep="Merge pull request"
         o = open
-        r = recent 
+        r = recent
+        cp = cherry-pick
+	f = fetch
 [user]
-	name = Wojciech Piątkowski
-	email = chmurson@gmail.com
+        name = Wojciech Piątkowski
+        email = chmurson@gmail.com
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[push]
+	default = simple
